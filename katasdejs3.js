@@ -1,11 +1,11 @@
 console.log("Atividade 1");
 
 
-function vowelsCounter(array){
+function vowelsCounter(lista){
 
     let result = [];
-    for (let i = 0; i < array.length; i++){
-        let frutas = array[i];
+    for (let i = 0; i < lista.length; i++){
+        let frutas = lista[i];
         let numVowels = 0;
         for (let v = 0; v < frutas.length; v++){
             let frutasVogais = frutas[v].toLowerCase();
@@ -31,24 +31,24 @@ console.log(vowelsCounter(["laranja", "abacaxi", "acerola", "morango", "uva", "m
 
 console.log("Atividade 2");
 
-function stringTripletGroup(array){
+function stringTripletGroup(arrayLista){
 
     let result = [];
-    for(let i = 0; i < array.length; i+= 3){
-        let letras = array[i];
+    for(let i = 0; i < arrayLista.length; i+= 3){
+        let letras = arrayLista[i];
         let text = "";
-        array[i + 1] ;
-        array[i + 2];
-        text += array[i];
-        if(array[i + 1] == undefined){
+        arrayLista[i + 1] ;
+        arrayLista[i + 2];
+        text += arrayLista[i];
+        if(arrayLista[i + 1] == undefined){
             text += " ";
         } else {
-            text += array[i + 1]
+            text += arrayLista[i + 1]
         }
-        if(array[i + 2] == undefined){
+        if(arrayLista[i + 2] == undefined){
             text += " ";
         } else {
-            text += array[i + 2];
+            text += arrayLista[i + 2];
         };
 
         result.push(text);
